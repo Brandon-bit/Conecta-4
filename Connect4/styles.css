@@ -1,0 +1,149 @@
+/* ROOT */
+:root{
+    --amarillo: #F5C008;
+    --rojo: #EB2300;
+    --blanco: #fff;
+    --azul: #006FFF;
+}
+
+
+/* GLOBALES */
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    font-size: 16px;
+}
+
+
+/* HEADER */
+header {
+    text-align: center;
+}
+h1{
+    font-size: 4rem;
+    letter-spacing: .5rem;
+    margin-bottom: 0;
+}
+h2{
+    margin-top: 0;
+    margin-bottom: 4rem;
+}
+p{
+    font-size: 2rem;
+}
+
+
+/* TABLERO */
+.tablero{
+    width: 40rem;
+    border: 2px solid;
+    margin: auto;
+    display: flex;
+    margin-bottom: 4rem;
+}
+.x{
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.y{
+    width: 100%;
+    height: 5rem;
+    background-color: var(--azul);
+    display: flex;
+    align-items: center;
+}
+.circulo{
+    margin: auto;
+    border-radius: 50%;
+    border: 2px black solid;
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--blanco);
+}
+
+@media (min-width: 768px){
+    .tablero{
+        width: 55rem;
+        border: 2px solid;
+        margin: auto;
+        display: flex;
+        margin-bottom: 4rem;
+    }
+    .x{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .y{
+        width: 100%;
+        height: 8rem;
+        background-color: var(--azul);
+        display: flex;
+        align-items: center;
+    }
+    .circulo{
+        margin: auto;
+        border-radius: 50%;
+        border: 2px black solid;
+        width: 7rem;
+        height: 7rem;
+        background-color: var(--blanco);
+    }
+}
+
+/* FICHAS */
+.roja{
+    background-color: var(--rojo);
+}
+
+.amarilla{
+    background-color: var(--amarillo);
+}
+
+.borde-blanco{
+    border: 2px var(--blanco) solid;
+}
+
+/* MARCADOR */
+.marcador{
+    width: 40rem;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 1rem;
+}
+#victoriasRojo{
+    background-color: var(--blanco);
+    color: black;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 1rem;
+}
+#victoriasAmarillo{
+    background-color: var(--blanco);
+    color: black;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 1rem;
+}
+
+/* BOTONES */
+.botones{
+    width: 30rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.btn{
+    font-size: 2rem;
+}
